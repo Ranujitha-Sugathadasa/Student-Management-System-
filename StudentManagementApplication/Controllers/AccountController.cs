@@ -26,31 +26,31 @@ namespace StudentManagementApplication.Controllers
         // }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
+        // public async Task<IActionResult> Login(LoginViewModel model)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
 
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("Index", "Home");
-                }
+        //         if (result.Succeeded)
+        //         {
+        //             return RedirectToAction("Index", "Home");
+        //         }
 
-                if (result.IsLockedOut)
-                {
-                    ModelState.AddModelError(string.Empty, "User account locked out.");
-                    return View(model);
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return View(model);
-                }
-            }
+        //         if (result.IsLockedOut)
+        //         {
+        //             ModelState.AddModelError(string.Empty, "User account locked out.");
+        //             return View(model);
+        //         }
+        //         else
+        //         {
+        //             ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+        //             return View(model);
+        //         }
+        //     }
 
-            return View(model);
-        }
+        //     return View(model);
+        // }
 
         [HttpGet]
         public IActionResult Register()
