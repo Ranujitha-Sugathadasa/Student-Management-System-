@@ -54,33 +54,33 @@ namespace StudentManagementApplication.Controllers
         }
 
         // [HttpPost]
-        // public async Task<IActionResult> Edit(int id, Student student)
-        // {
-        //     if (id != student.StudentId)
-        //     {
-        //         return NotFound();
-        //     }
+        public async Task<IActionResult> Edit(int id, Student student)
+        {
+            if (id != student.StudentId)
+            {
+                return NotFound();
+            }
 
-        //     if (ModelState.IsValid)
-        //     {
-        //         try
-        //         {
-        //             _context.Update(student);
-        //             await _context.SaveChangesAsync();
-        //         }
-        //         catch (DbUpdateConcurrencyException)
-        //         {
-        //             if (!StudentExists(student.StudentId))
-        //             {
-        //                 return NotFound();
-        //             }
-        //             else
-        //             {
-        //                 throw;
-        //             }
-        //         }
-        //         return RedirectToAction(nameof(Index));
-        //     }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(student);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!StudentExists(student.StudentId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
             return View(student);
         }
 
