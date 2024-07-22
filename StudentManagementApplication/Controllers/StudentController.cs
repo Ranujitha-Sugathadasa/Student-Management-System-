@@ -6,25 +6,25 @@ using StudentManagementApplication.Models;
 
 namespace StudentManagementApplication.Controllers
 {
-    // public class StudentController : Controller
-    // {
-    //     private readonly ApplicationDbContext _context;
+    public class StudentController : Controller
+    {
+        private readonly ApplicationDbContext _context;
 
-    //     public StudentController(ApplicationDbContext context)
-    //     {
-    //         _context = context;
-    //     }
+        public StudentController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
-    //     public async Task<IActionResult> Index()
-    //     {
-    //         var students = await _context.Students.Include(s => s.Courses).ToListAsync();
-    //         return View(students);
-    //     }
+        public async Task<IActionResult> Index()
+        {
+            var students = await _context.Students.Include(s => s.Courses).ToListAsync();
+            return View(students);
+        }
 
-    //     public IActionResult Create()
-    //     {
-    //         return View();
-    //     }
+        public IActionResult Create()
+        {
+            return View();
+        }
 
     //     [HttpPost]
     //     public async Task<IActionResult> Create(Student student)
