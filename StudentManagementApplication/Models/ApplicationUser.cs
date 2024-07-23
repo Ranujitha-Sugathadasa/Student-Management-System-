@@ -7,11 +7,11 @@ namespace StudentManagementApplication.Models
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
 
-		// public ApplicationUser()
-		// {
-		// 	FirstName = string.Empty;
-		// 	LastName = string.Empty;
-		// }
+		public ApplicationUser()
+		{
+			FirstName = string.Empty;
+			LastName = string.Empty;
+		}
 	}
 }
 

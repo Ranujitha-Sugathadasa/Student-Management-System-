@@ -3743,11 +3743,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ranujitha/Projects/StudentManagementApplication/StudentManagementApplication/StudentManagementApplication.csproj",
+      "projectUniqueName": "/Users/ranujitha/GitHub/Student-Management-System-/StudentManagementApplication/StudentManagementApplication.csproj",
       "projectName": "StudentManagementApplication",
-      "projectPath": "/Users/ranujitha/Projects/StudentManagementApplication/StudentManagementApplication/StudentManagementApplication.csproj",
+      "projectPath": "/Users/ranujitha/GitHub/Student-Management-System-/StudentManagementApplication/StudentManagementApplication.csproj",
       "packagesPath": "/Users/ranujitha/.nuget/packages/",
-      "outputPath": "/Users/ranujitha/Projects/StudentManagementApplication/StudentManagementApplication/obj/",
+      "outputPath": "/Users/ranujitha/GitHub/Student-Management-System-/StudentManagementApplication/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ranujitha/.nuget/NuGet/NuGet.Config"
@@ -3756,7 +3756,7 @@
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.316/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.317/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3823,7 +3823,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
       }
     }
   }
