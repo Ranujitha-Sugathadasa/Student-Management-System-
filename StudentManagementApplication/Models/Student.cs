@@ -1,7 +1,7 @@
 ﻿using System;
 namespace StudentManagementApplication.Models
 {
-	public class Student
+	/*public class Student
 	{
         public int StudentId { get; set; }
         public string Name { get; set; }
@@ -15,6 +15,6 @@ namespace StudentManagementApplication.Models
             Gender = string.Empty;
             Courses = new List<Course>();
 		}
-	}
+	}*/
 }
 
