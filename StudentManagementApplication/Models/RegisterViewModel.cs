@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace StudentManagementApplication.Models
 {
-	public class RegisterViewModel
+	/*public class RegisterViewModel
     {
         [Required]
         [Display(Name = "UserName")]
@@ -22,7 +22,7 @@ namespace StudentManagementApplication.Models
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; }*/
     
 
     public RegisterViewModel()
